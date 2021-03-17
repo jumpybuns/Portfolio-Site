@@ -7,9 +7,10 @@ html {
 }
 body {
   margin: 0;
+  background-color: #FFE099;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: hsla(0, 0%, 0%, 0.8);
+  color: #8A3324;
   font-family: georgia, serif;
   font-weight: normal;
   word-wrap: break-word;
@@ -26,6 +27,7 @@ figcaption,
 figure,
 footer,
 header,
+sideBar,
 main,
 menu,
 nav,
@@ -87,6 +89,14 @@ h1 {
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;
   line-height: 1.1;
+}
+
+header {
+  background-color: #E25822;
+}
+
+sideBar {
+  background-color: #467D84;
 }
 mark {
   background-color: #ff0;

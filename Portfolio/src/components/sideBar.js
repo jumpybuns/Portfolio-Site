@@ -2,16 +2,18 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
-const Header = ({ siteTitle }) => (
-  <header
+const SideBar = ({ siteBar }) => (
+  <sideBar
     style={{
-    
+      width: 100,
+      height: 550,
+      
     }}
   >
     <div
       style={{
-        margin: `0 auto`,
-        maxWidth: 960,
+        margin: `5 auto`,
+        maxWidth: 190,
         padding: `1.45rem 1.0875rem`,
       }}
     >
@@ -23,19 +25,19 @@ const Header = ({ siteTitle }) => (
             textDecoration: `none`,
           }}
         >
-          {siteTitle}
+          {siteBar}
         </Link>
       </h1>
     </div>
-  </header>
+  </sideBar>
 )
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+SideBar.propTypes = {
+  siteBar: PropTypes.string,
 }
 
-Header.defaultProps = {
-  siteTitle: ``,
+SideBar.defaultProps = {
+  siteBar: ``,
 }
 
-export default Header
+export default SideBar;
